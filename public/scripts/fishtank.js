@@ -53,6 +53,10 @@ class Fishtank {
     setTimeout(() => $victim.remove(), 3000);
   }
 
+  getDenizens() {
+    return this.denizens;
+  }
+
   runPhysics(time) {
     if (!time) {
       time = new Date();

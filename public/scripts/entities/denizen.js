@@ -70,4 +70,12 @@ class Denizen {
       this.position.y - 5 * this.height > bounds.maxY
     );
   }
+
+
+  isNear(other, distance) {
+    let dx = this.position.x - other.position.x;
+    let dy = this.position.y - other.position.y;
+    return (dx * dx + dy * dy) <= (distance * distance);
+  }
+
 }
